@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="https://www.pngfind.com/images/lazy-bg.png">
+<title>INDEX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./net.css">
+<link rel="stylesheet" href="./net.color.css">
+<link rel="stylesheet" href="./font.net.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+  </head>
+<body>
+<!-- Header -->
+<header class="net-container net-theme net-padding" id="myHeader">
+  <i onclick="net_open()" class="fa fa-bars net-xlarge net-button net-theme"></i> 
+  <div class="net-center">
+  <h4>SECURITY GATEWAY 2.0</h4>
+  <h1 class="net-xxxlarge net-animate-bottom">GLOBAL SECURITY GATEWAY</h1>
+<center><img src="https://pngimage.net/wp-content/uploads/2018/06/logo-polis-png-3.png"></img></center>
+    <div class="net-padding-32">
+      <button class="net-btn net-xlarge net-dark-grey net-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">INFORMASI</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="net-modal">
+    <div class="net-modal-content net-card-4 net-animate-top">
+      <header class="net-container net-theme-l1"> 
+<style>
+      .tulis p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+</style>
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="net-button net-display-topright">×</span>
+        <h4><center>
+      <div class="w3-padding">
+<div class="tulis">
+  <p>TERIMA KASIH PDRM</p>
+</div></h4>
+      </header>
+      <div class="net-padding">
+        <center><p>PENINGKATAN GRAFIK</p>
+        <p>GATEWAY 2.0</p></center>
+      </div>
+      <footer class="net-container net-theme-l1">
+        <p>oleh Netizen</p>
+      </footer></center>
+    </div>
+</div>
+
+
+<div class="net-third">
+  <div class="net-card net-container" style="min-height:auto">
+  <p> <button class="net-btn net-xlarge net-dark-grey net-hover-light-grey" onclick="document.getElementById('id03').style.display='block'" style="font-weight:900;">SYSTEM</button></a></p>
+  </div>
+</div>
+</div>
+
+<div class="net-container">
+<hr>
+<div class="net-center">
+  <marquee><h2>SECURITY FRAMEWORK</h2></marquee>
+</div>
+<hr>
+</div>
+<h1>FACE BIOMETRIC</h1>
+<center>
+<div class="buttons">
+    <div>
+        <input id="facing-mode" type="checkbox" value="1" checked>
+        <span><label for="facing-mode"><b>Camera Switch</b></label></span>
+    </div>
+    
+<div>
+        <input id="to-grayscale" type="checkbox" value="0">
+        <span><label for="to-grayscale">To grayscale</label></span>
+        <input id="debug" type="checkbox" value="0">
+        <span><label for="debug">Camera Analyze</label></span>
+    </div>
+</div>
+</center>
+<div class="container">
+    <video id="camera" playsinline autoplay></video>
+    <canvas id="from-video"></canvas>
+    <div class="cliped-container"></div>
+    <div id="dummy-box">
+        <div class="bar">
+            <div class="range">
+                <span class="range-val-wrapper">Left and right margins: <span class="range-val"></span></span>
+                <input id="adjustment_of_x" type="range" min="0" max="60" value="15">
+            </div>
+            <div class="range">
+                <span class="range-val-wrapper">Top and bottom margins: <span class="range-val"></span></span>
+                <input id="adjustment_of_y" type="range" min="0" max="60" value="15">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/util/Stats.js"></script>
+<script src="js/pico.min.js"></script>
+<script src="js/face_recognition_with_pico.js"></script>
+</body>
+</html>
