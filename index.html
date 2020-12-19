@@ -52,42 +52,6 @@ document.onmouseup = mousehandler;
 </div>
   <center><h1>PENGENALAN IDENTITI</h1></center>
 <center>
-<div class="buttons">
-    <div>
-        <input id="facing-mode" type="checkbox" value="1" checked>
-        <span><label for="facing-mode"><b>Alih Camera</b></label></span>
-    </div>
-    
-<div>
-        <input id="to-grayscale" type="checkbox" value="0">
-        <span><label for="to-grayscale">To grayscale</label></span>
-        <input id="debug" type="checkbox" value="0">
-        <span><label for="debug">Camera Analyze</label></span>
-    </div>
-</div>
-</center>
-<div class="container"><center>
-    <video id="camera" playsinline autoplay></video>
-    <canvas id="from-video"></canvas>
-    <div class="cliped-container"></div>
-    <div id="dummy-box">
-        <div class="bar">
-            <div class="range">
-                <span class="range-val-wrapper">Margin Kiri dan Kanan <span class="range-val"></span></span>
-                <input id="adjustment_of_x" type="range" min="0" max="60" value="15"></center>
-            </div>
-            <div class="range">
-                      <center>
-<span class="range-val-wrapper">Margin Atas dan Bawah <span class="range-val"></span></span>
-                <input id="adjustment_of_y" type="range" min="0" max="60" value="15">
-              </center></div>
-        </div>
-    </div>
-</div>
-<script src="js/util/Stats.js"></script>
-<script src="js/pico.min.js"></script>
-<script src="js/face_recognition_with_pico.js"></script>
-      </center>
 <style>
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
@@ -131,6 +95,42 @@ body{
   to{border-right-color: transparent;}
 }
 </style>
-<p class="line-1 anim-typewriter">HEALTH CONDITION: NORMAL%</p><p>Patient Name:</p><p>ID Number:</p><p>Condition:</p>
+<center><p class="line-1 anim-typewriter">HEALTH CONDITION: NORMAL%</p></center>
+<div class="buttons">
+    <div>
+        <input id="facing-mode" type="checkbox" value="1" checked>
+        <span><label for="facing-mode"><b>Alih Camera</b></label></span>
+    </div>
+    
+<div>
+        <input id="to-grayscale" type="checkbox" value="0">
+        <span><label for="to-grayscale">To grayscale</label></span>
+        <input id="debug" type="checkbox" value="0">
+        <span><label for="debug">Camera Analyze</label></span>
+    </div>
+</div>
+</center>
+<div class="container"><center>
+    <video id="camera" playsinline autoplay></video>
+    <canvas id="from-video"></canvas>
+    <div class="cliped-container"></div>
+    <div id="dummy-box">
+        <div class="bar">
+            <div class="range">
+                <span class="range-val-wrapper">Margin Kiri dan Kanan <span class="range-val"></span></span>
+                <input id="adjustment_of_x" type="range" min="0" max="60" value="15"></center>
+            </div>
+            <div class="range">
+                      <center>
+<span class="range-val-wrapper">Margin Atas dan Bawah <span class="range-val"></span></span>
+                <input id="adjustment_of_y" type="range" min="0" max="60" value="15">
+              </center></div>
+        </div>
+    </div>
+</div>
+<script src="js/util/Stats.js"></script>
+<script src="js/pico.min.js"></script>
+<script src="js/face_recognition_with_pico.js"></script>
+      </center>
 </body>
 </html>
